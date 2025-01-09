@@ -1,9 +1,9 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "ml-custom-block/form-textarea",
+	"name": "gutenberg-bootstrap-form/form-textarea",
 	"version": "0.1.0",
-	"title": "ML Textarea",
+	"title": "Textarea",
 	"category": "widgets",
 	"icon": "welcome-write-blog",
 	"description": "Textarea form control with options.",

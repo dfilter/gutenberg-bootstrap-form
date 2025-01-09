@@ -1,0 +1,150 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "gutenberg-bootstrap-form/form-control",
+  "version": "0.1.0",
+  "title": "ML Form Control",
+  "category": "widgets",
+  "icon": "forms",
+  "description": "Form control to be placed in ml form.",
+  "example": {},
+  "supports": {
+    "html": false,
+    "spacing": {
+      "padding": true,
+      "margin": true
+    }
+  },
+  "attributes": {
+    "controlClass": {
+      "type": "string",
+      "default": "form-control"
+    },
+    "buttonSizeClass": {
+      "type": "string"
+    },
+    "buttonClass": {
+      "type": "string"
+    },
+    "isFloating": {
+      "type": "boolean",
+      "default": false
+    },
+    "controlSizeClass": {
+      "type": "string",
+      "enum": ["form-control-sm", "", "form-control-lg"],
+      "default": ""
+    },
+    "pattern": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "required": {
+      "type": "boolean",
+      "default": false
+    },
+    "readonly": {
+      "type": "boolean",
+      "default": false
+    },
+    "type": {
+      "type": "string",
+      "default": "text",
+      "enum": [
+        "color",
+        "date",
+        "datetime-local",
+        "email",
+        "hidden",
+        "month",
+        "number",
+        "password",
+        "range",
+        "tel",
+        "text",
+        "time",
+        "url",
+        "week",
+        "submit",
+        "reset"
+      ]
+    },
+    "autocapitalize": {
+      "type": "boolean",
+      "default": false
+    },
+    "autocomplete": {
+      "type": "boolean",
+      "default": false
+    },
+    "dirname": {
+      "type": "string"
+    },
+    "form": {
+      "type": "string"
+    },
+    "formaction": {
+      "type": "string"
+    },
+    "formenctype": {
+      "type": "string",
+      "enum": [
+        "",
+        "application/x-www-form-urlencoded",
+        "multipart/form-data",
+        "text/plain"
+      ]
+    },
+    "formmethod": {
+      "type": "string",
+      "enum": ["", "get", "post", "dialog"]
+    },
+    "formnovalidate": {
+      "type": "boolean"
+    },
+    "formtarget": {
+      "type": "string",
+      "enum": ["", "_self", "_blank", "_parent", "_top"]
+    },
+    "multiple": {
+      "type": "boolean"
+    },
+    "hasLabel": {
+      "type": "boolean",
+      "default": false
+    },
+    "labelText": {
+      "type": "string"
+    },
+    "placeholder": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    },
+    "max": {
+      "type": "number"
+    },
+    "min": {
+      "type": "number"
+    },
+    "maxlength": {
+      "type": "number"
+    },
+    "minlength": {
+      "type": "number"
+    },
+    "step": {
+      "type": "number"
+    },
+    "disabled": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "textdomain": "form-control",
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

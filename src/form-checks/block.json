@@ -1,0 +1,69 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "gutenberg-bootstrap-form/form-checks",
+  "version": "0.1.0",
+  "title": "ML Form Checks Container",
+  "category": "widgets",
+  "icon": "slides",
+  "description": "Form checks and radios in the bootstrap style.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "isSwitch": {
+      "type": "boolean",
+      "default": false
+    },
+    "labelText": {
+      "type": "string"
+    },
+    "hasLabel": {
+      "type": "boolean",
+      "default": true
+    },
+    "controlClasses": {
+      "type": "string"
+    },
+    "wrapperClasses": {
+      "type": "string",
+      "default": "form-check",
+      "enum": ["form-check", "form-check form-switch", ""]
+    },
+    "formattingClass": {
+      "type": "string",
+      "default": "",
+      "enum": ["", "form-check-inline", "form-check-reverse"]
+    },
+    "checked": {
+      "type": "boolean",
+      "default": false
+    },
+    "disabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "form": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "required": {
+      "type": "boolean",
+      "default": false
+    },
+    "type": {
+      "type": "string",
+      "enum": ["checkbox", "radio"],
+      "default": "checkbox"
+    },
+    "value": {
+      "type": "string"
+    }
+  },
+  "textdomain": "gutenberg-bootstrap-form",
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

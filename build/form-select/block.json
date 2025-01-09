@@ -1,0 +1,69 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "gutenberg-bootstrap-form/form-select",
+  "version": "0.1.0",
+  "title": "ML Form Select",
+  "category": "widgets",
+  "icon": "menu",
+  "description": "Form select box with predefined options.",
+  "example": {},
+  "supports": {
+    "html": false,
+    "spacing": {
+      "padding": true,
+      "margin": true
+    }
+  },
+  "attributes": {
+    "autocomplete": {
+      "type": "string"
+    },
+    "autofocus": {
+      "type": "boolean",
+      "default": false
+    },
+    "disabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "form": {
+      "type": "string"
+    },
+    "multiple": {
+      "type": "boolean",
+      "default": false
+    },
+    "name": {
+      "type": "string"
+    },
+    "required": {
+      "type": "boolean",
+      "default": false
+    },
+    "size": {
+      "type": "integer"
+    },
+    "isFloating": {
+      "type": "boolean",
+      "default": false
+    },
+    "hasLabel": {
+      "type": "boolean",
+      "default": false
+    },
+    "selectLabel": {
+      "type": "string"
+    },
+    "selectOptions": {
+      "type": "array",
+      "default": []
+    },
+    "selectSize": {
+      "type": "string"
+    }
+  },
+  "textdomain": "form-select",
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

@@ -1,0 +1,8 @@
+{
+	"git.detectSubmodulesLimit": 30,
+	"intelephense.files.maxSize": 30000000,
+	"intelephense.environment.includePaths": [
+		"./vendor/php-stubs/wordpress-stubs"
+	],
+	"phpsab.standard": "./phpcs.xml"
+}

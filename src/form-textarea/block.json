@@ -1,0 +1,90 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ml-custom-block/form-textarea",
+	"version": "0.1.0",
+	"title": "ML Textarea",
+	"category": "widgets",
+	"icon": "welcome-write-blog",
+	"description": "Textarea form control with options.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"autocapitalize": {
+			"type": "boolean",
+			"default": false
+		},
+		"autocomplete": {
+			"type": "string",
+			"enum": [ "on", "off" ]
+		},
+		"autocorrect": {
+			"type": "string",
+			"enum": [ "on", "off" ]
+		},
+		"autofocus": {
+			"type": "boolean",
+			"default": false
+		},
+		"cols": {
+			"type": "integer"
+		},
+		"disabled": {
+			"type": "boolean",
+			"default": false
+		},
+		"form": {
+			"type": "string"
+		},
+		"maxlength": {
+			"type": "integer"
+		},
+		"minlength": {
+			"type": "integer"
+		},
+		"name": {
+			"type": "string"
+		},
+		"placeholder": {
+			"type": "string"
+		},
+		"readonly": {
+			"type": "boolean",
+			"default": false
+		},
+		"required": {
+			"type": "boolean",
+			"default": false
+		},
+		"rows": {
+			"type": "integer"
+		},
+		"spellcheck": {
+			"type": "string",
+			"enum": [ "true", "default", "true" ]
+		},
+		"wrap": {
+			"type": "string",
+			"enum": [ "hard", "soft", "off" ]
+		},
+		"isFloating": {
+			"type": "boolean",
+			"default": false
+		},
+		"labelText": {
+			"type": "string"
+		},
+		"hasLabel": {
+			"type": "boolean",
+			"default": false
+		},
+		"defaultText": {
+			"type": "string"
+		}
+	},
+	"textdomain": "ml-custom-block",
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

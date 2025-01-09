@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "gutenberg-bootstrap-form/form",
+  "version": "0.1.0",
+  "title": "ML Form",
+  "category": "widgets",
+  "icon": "forms",
+  "description": "Form block within which to place inputs.",
+  "example": {},
+  "supports": {
+    "html": false,
+    "interactivity": true
+  },
+  "attributes": {
+    "formId": {
+      "type": "string",
+      "default": "ml-form-default-id"
+    },
+    "apiEndpoint": {
+      "type": "string",
+      "default": "ml-contact-form/v1/contact/"
+    }
+  },
+  "textdomain": "form",
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php",
+  "viewScriptModule": "file:./view.js",
+  "usesContext": ["postId", "postType"]
+}
